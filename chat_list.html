@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+<!-- 消息列表 -->
+<div class="message_page page">
+    <div class="message_title page_title">
+        <h3>消息</h3>
+        <a class="friend_icon title_icon"><i class="fa fa-user"></i></a>
+        <a class="new_friend_icon title_icon"><i class="fa fa-users"></i></a>
+    </div>
+    <div class="message_list page_list scroll_style">
+
+        <ul>
+
+            <li>
+                <a href="chat_window.html">
+                    <div class="message_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="message_info page_info">
+                        <h3>user1</h3>
+                        <p>message1</p>
+                    </div>
+                    <div class="message_time">下午 2:30</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="chat_window.html">
+                    <div class="message_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="message_info page_info">
+                        <h3>user1</h3>
+                        <p>message1</p>
+                    </div>
+                    <div class="message_time">下午 2:30</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="chat_window.html">
+                    <div class="message_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="message_info page_info">
+                        <h3>user1</h3>
+                        <p>message1</p>
+                    </div>
+                    <div class="message_time">下午 2:30</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="chat_window.html">
+                    <div class="message_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="message_info page_info">
+                        <h3>user1</h3>
+                        <p>message1</p>
+                    </div>
+                    <div class="message_time">下午 2:30</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="chat_window.html">
+                    <div class="message_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="message_info page_info">
+                        <h3>user1</h3>
+                        <p>message1</p>
+                    </div>
+                    <div class="message_time">下午 2:30</div>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+</div>
+
+<!-- 好友列表 -->
+<div class="friend_page page">
+    <div class="friend_title page_title">
+        <h3>好友列表</h3>
+        <a class="plus_icon title_icon"><i class="fa fa-plus"></i></a>
+        <a class="return_message title_icon">返回  <i class="fa fa-chevron-right"></i></a>
+    </div>
+    <div class="friend_list page_list scroll_style">
+
+        <ul>
+
+            <li>
+                <a href="chat_window.html">
+                    <div class="friend_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="friend_info page_info">
+                        <h3>user1</h3>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="chat_list.html">
+                    <div class="friend_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="friend_info page_info">
+                        <h3>user1</h3>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="chat_list.html">
+                    <div class="friend_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="friend_info page_info">
+                        <h3>user1</h3>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="chat_list.html">
+                    <div class="friend_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="friend_info page_info">
+                        <h3>user1</h3>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- 加好友列表 -->
+    <div class="add_fri">
+        <div class="add_main">
+            <div class="search_fri">
+                <input type="text" placeholder="输入账号">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="fri_result">
+                <div class="search_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                <div class="search_info page_info">
+                    <h3>user1</h3>
+                </div>
+                <div class="add_icon"><i class="fa fa-plus"></i></div>
+            </div>
+            <div class="add_close"><i class="fa fa-close"></i></div>
+        </div>
+    </div>
+    <div class="mask"></div>
+
+</div>
+
+<!-- 新好友列表 -->
+<div class="new_friend_page page">
+    <div class="new_friend_title page_title">
+        <h3>新好友</h3>
+        <a class="new_return_message title_icon"><i class="fa fa-chevron-left"></i>  返回 </a>
+    </div>
+    <div class="new_friend_list page_list scroll_style">
+
+        <ul>
+
+            <li>
+                <a>
+                    <div class="friend_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="friend_info page_info">
+                        <h3>user1</h3>
+                    </div>
+                    <div class="add_status adding"><button type="submit">添加</button></div>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <div class="friend_img page_img"><img src="images/userImg/user_img1.png" alt=""></div>
+                    <div class="friend_info page_info">
+                        <h3>user1</h3>
+                    </div>
+                    <div class="add_status added">已添加</div>
+                </a>
+            </li>
+
+
+        </ul>
+
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+/*********         default       *********/
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.scroll_style::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.scroll_style::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/*定义滑块 内阴影+圆角*/
+.scroll_style::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #999;
+}
+
+.page{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+}
+
+.page_title{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    height: 20px;
+    width: 100%;
+    display: inline-block;
+    background: #92d3d0;
+    text-align: center;
+}
+
+.page_title a{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top:18px;
+}
+
+
+.page_list{
+    margin-top: 50px;
+}
+
+.page_list,
+.page_list ul{
+    width: 100%;
+}
+
+.page_list{
+    overflow-y: scroll;
+}
+
+.page_list ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: relative;
+}
+
+.page_list ul li,
+.page_img,
+.page_info{
+    display: inline-block;
+}
+
+.page_img img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.page_info{
+    margin-left: 10px;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+.message_info h3,
+.message_info p{
+    display: block;
+}
+
+.page_list ul li a{
+    display: block;
+    width: 100%;
+}
+
+
+/*********         message list        *********/
+
+.message_page{
+    position: absolute;
+}
+
+.friend_icon{
+    position: absolute;
+    right: 60px;
+}
+
+.new_friend_icon{
+    position: absolute;
+    right: 20px;
+}
+
+.message_info h3{
+    line-height: 15px;
+}
+
+.message_info p{
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+    color: #bbb;
+}
+
+.message_time{
+    display: inline-block;
+    position: absolute;
+    right:20px;
+    font-size: 12px;
+    color: #bbb;
+}
+
+/*********         friend list        *********/
+.friend_page{
+    position: absolute;
+    left: -100%;
+}
+
+.friend_info h3{
+    line-height: 30px;
+}
+
+.return_message{
+    position: absolute;
+    right: 20px;
+}
+
+.plus_icon{
+    position: absolute;
+    left: 20px;
+}
+
+.return_message{
+    position: absolute;
+    right: 20px;
+    font-size: 14px;
+}
+
+
+/*********       new  friend list        *********/
+.new_friend_page{
+    position: absolute;
+    right: -100%;
+}
+
+.new_return_message{
+    position: absolute;
+    left: 20px;
+    font-size: 14px;
+}
+
+.new_friend_info h3{
+    line-height: 30px;
+}
+
+.add_status{
+    position: absolute;
+    right: 20px;
+    top:15px;
+    color: #666666;
+    font-size: 12px;
+}
+
+.add_status button{
+    border: 1px solid #eee;
+    background: #eee;
+    padding: 3px 10px;
+}
+
+/*********         add friend        *********/
+.add_fri{
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    top: 100px;
+    display: none;
+}
+
+.add_main{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px 0 20px 0;
+}
+
+.search_fri,
+.fri_result{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search_fri input{
+    width: 75%;
+    padding: 10px;
+    border: none;
+    background: #ddd;
+}
+
+.search_fri button{
+    border: none;
+    margin-left: 5px;
+    background: #fff;
+}
+
+.fri_result{
+    padding: 30px 0 20px 0;
+}
+
+.search_info h3{
+    height: 35px;
+    line-height: 35px;
+}
+
+.add_icon{
+    position: absolute;
+    right: 20px;
+    bottom: 35px;
+}
+
+.add_close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+/*********         mask        *********/
+.mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+
+
+
+/****************        chat window       ****************/
+.chat_title{
+    position: absolute;
+}
+.chat_title p{
+    width: 100%;
+    text-align: center;
+}
+
+.chat_input{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    background: #fff;
+}
+
+.chat_input div{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.chat_input div textarea{
+    width: 80%;
+    padding: 3px 0;
+    border: none;
+    background: #ddd;
+    border-radius: 3px;
+}
+
+.chat_input div button{
+    width: 15%;
+    border: none;
+    background: #fff;
+}
+
+.chat_container{
+    padding-top: 60px;
+    overflow-y: scroll;
+}
+
+.dialog_box {
+    margin-bottom:10px;
+    padding: 0 40px 0 20px;
+    position:relative;
+}
+
+.triangle {
+    position:absolute;
+    top:50%;
+    margin-top:-8px;
+    display:block;
+    width:0;
+    height:0;
+    overflow:hidden;
+    line-height:0;
+    font-size:0;
+    border-bottom:8px solid #FFF;
+    border-top:8px solid #FFF;
+}
+
+.chat_send .triangle {
+    border-right:8px solid #000;
+    left: 42px;
+    border-left:none;
+    border-right:8px solid #000;
+}
+
+.chat_return .triangle {
+    border-right:8px solid #eee;
+    right: 42px;
+    border-right:none;
+    border-left:8px solid #eee;
+}
+
+.dialog_box .article {
+    padding:5px 10px;
+    border-radius:5px;
+    max-width: 80%;
+    display:block;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.chat_return {
+    padding: 0 20px 0 40px;
+}
+
+.chat_return .triangle {
+    border-bottom:8px solid #FFF;
+    border-top:8px solid #FFF;
+
+}
+
+.chat_send .article {
+    float:left;
+    border:1px solid #000;
+    background-color: #000;
+    color: #fff;
+    margin-left: 30px;
+    position: relative;
+}
+
+.chat_return .article {
+    float:right;
+    border:1px solid #eee;
+    background-color: #eee;
+    color: #000;
+    margin-right: 30px;
+    position: relative;
+}
+
+.dialog_box img{
+    width: 30px;
+    height: 30px;
+}
+.send_img{
+    position: absolute;
+    left: 5px;
+}
+
+.return_img{
+    position: absolute;
+    right: 5px;
+}
+
+.chat_send .failed_send{
+    position: absolute;
+    top: 2px;
+    right: -20px;
+}
+
+.chat_return .failed_send{
+    position: absolute;
+    top: 2px;
+    left: -20px;
+    z-index: 999;
+}
+
+.failed_send i{
+    color: red;
+}

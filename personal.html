@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+    <div class="logo">爱<strong> pin</strong></div>
+    <div class="user">
+        <i class="fa fa-user"></i>
+    </div>
+    <div class="signIn">
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登录</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">注册</label>
+                <div class="login-form">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label for="user" class="label">用户名</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="登录">
+                        </div>
+                        <div class="hr"></div>
+
+                    </div>
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="user" class="label">用户名</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">再次输入密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="注册">
+                        </div>
+                        <div class="hr"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close">×</div>
+    </div>
+</div>
+
+<!-- 个人信息 -->
+<div class="personal_info">
+    <a class="change_userImg"><div class="personal_img"><img src="images/goods/goods1.jpg" alt=""></div></a>
+
+    <div class="change_userImg_div">
+        <div class="change_img_close"><i class="fa fa-close"></i></div>
+        <p>修改头像</p>
+        <input type="file" name="" />
+        <button type="submit">提交</button>
+    </div>
+
+    <a class="change_userInfo">
+        <div class="personal_id">
+            <p>banana</p>
+        </div>
+    </a>
+
+    <div class="change_userInfo_div">
+        <div class="change_info_close"><i class="fa fa-close"></i></div>
+        <p>修改昵称</p>
+        <input type="text" name="" placeholder="修改昵称"/>
+        <button type="submit">提交</button>
+    </div>
+
+</div>
+
+<!-- 订单信息 -->
+<div class="personal_main">
+    <ul id="myTab" class="nav nav-tabs personal_tag">
+        <li class="active">
+            <a href="#home" data-toggle="tab">
+                <i class="fa fa-file-text" id="per_tag1"></i>
+                <p>历史订单</p>
+            </a>
+        </li>
+        <li>
+            <a href="#ios" data-toggle="tab">
+                <i class="fa fa-shopping-cart" id="per_tag2"></i>
+                <p>待完成</p>
+            </a>
+        </li>
+        <li>
+            <a href="#java" data-toggle="tab">
+                <i class="fa fa-pencil" id="per_tag3"></i>
+                <p>待评价</p>
+            </a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+            <div class="personal_list clearfix" id="good1">
+                <div class="personal_list_img"><img src="images/goods/goods1.jpg" alt=""></div>
+                <div class="personal_list_info">
+                    <div class="personal_list_title">照相机</div>
+                    <div class="personal_list_button"><a href="" target="_blank">查看</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="ios">
+            <div class="personal_list clearfix" id="good2">
+                <div class="personal_list_img"><img src="images/goods/goods2.jpg" alt=""></div>
+                <div class="personal_list_info">
+                    <div class="personal_list_title">手机</div>
+                    <div class="personal_list_button"><a href="goods.html" target="_blank">查看</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="java">
+            <div class="personal_list clearfix" id="good3">
+                <div class="personal_list_img"><img src="images/goods/goods3.jpg" alt=""></div>
+                <div class="personal_list_info">
+                    <div class="personal_list_title">电脑</div>
+                    <div class="personal_list_button"><a href="goods.html" target="_blank">评价</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>

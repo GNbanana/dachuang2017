@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布商品</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+    <div class="logo">爱<strong> pin</strong></div>
+    <div class="user">
+        <i class="fa fa-user"></i>
+    </div>
+    <div class="search">
+        <form action="">
+            <input class="search_input" type="text" value="" placeholder="搜索">
+            <button class="search_button" type="button"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="signIn">
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登录</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">注册</label>
+                <div class="login-form">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label for="user" class="label">用户名</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="登录">
+                        </div>
+                        <div class="hr"></div>
+
+                    </div>
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="user" class="label">用户名</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">再次输入密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="注册">
+                        </div>
+                        <div class="hr"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close">×</div>
+    </div>
+</div>
+
+<!-- 商品信息 -->
+<div class="issue_main">
+    <div class="issue_container">
+        <select class="tap_select">
+            <option value="0" selected = "selected" disabled="disabled">选择商品标签</option>
+            <option value="1">服装</option>
+            <option value="2">美妆</option>
+            <option value="3">食品</option>
+            <option value="4">电子产品</option>
+            <option value="5">图书文具</option>
+            <option value="6">运动户外</option>
+            <option value="7">家居家纺</option>
+            <option value="8">生活百货</option>
+            <option value="9">其他</option>
+        </select>
+
+        <input class="issue_input issue_link" type="text" value="" placeholder="添加商品链接"><i class="fa fa-link"></i>
+
+        <input class="issue_input issue_info" type="text" value="" placeholder="商品名称"><i class="fa fa-tag"></i>
+
+        <input class="issue_input issue_price" type="text" value="" placeholder="价格"><i class="fa fa-rmb"></i>
+
+        <input class="issue_input issue_num" type="text" value="" placeholder="目标人数"><i class="fa fa-user"></i>
+
+        <textarea class="issue_textarea" placeholder="商品详细信息"></textarea>
+
+        <button class="issue_button" type="submit">发布</button>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>

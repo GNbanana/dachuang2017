@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+    <div class="logo">爱<strong> pin</strong></div>
+    <div class="user">
+        <i class="fa fa-user"></i>
+    </div>
+    <div class="search">
+        <form action="">
+            <input class="search_input" type="text" value="" placeholder="搜索">
+            <button class="search_button" type="button"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="signIn">
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登录</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">注册</label>
+                <div class="login-form">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label for="user" class="label">用户名</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="登录">
+                        </div>
+                        <div class="hr"></div>
+
+                    </div>
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="user" class="label">用户名</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">再次输入密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="注册">
+                        </div>
+                        <div class="hr"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close">×</div>
+    </div>
+</div>
+
+<!-- 商品列表 -->
+<div class="list_main">
+    <div class="goods_list clearfix" id="good1">
+        <div class="list_img"><img src="images/goods/goods1.jpg" alt=""></div>
+        <div class="list_info">
+            <div class="list_title">照相机</div>
+            <div class="list_price"><i class="fa fa-rmb"></i>40000</div>
+            <div class="list_button"><a href="goods.html" target="_blank">查看</a></div>
+        </div>
+    </div>
+    <div class="goods_list clearfix" id="good2">
+        <div class="list_img"><img src="images/goods/goods1.jpg" alt=""></div>
+        <div class="list_info">
+            <div class="list_title">手机</div>
+            <div class="list_price"><i class="fa fa-rmb"></i>3299</div>
+            <div class="list_button"><a href="goods.html" target="_blank">查看</a></div>
+        </div>
+    </div>
+    <div class="goods_list clearfix" id="good3">
+        <div class="list_img"><img src="images/goods/goods3.jpg" alt=""></div>
+        <div class="list_info">
+            <div class="list_title">电脑</div>
+            <div class="list_price"><i class="fa fa-rmb"></i>6399</div>
+            <div class="list_button"><a href="goods.html" target="_blank">查看</a></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>

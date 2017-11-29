@@ -1,0 +1,896 @@
+
+/*
+
+首页
+
+*/
+
+
+/*
+ header
+ */
+.header{
+    position: relative;
+    background: #92d3d0;
+    padding: 15px 0;
+    height: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.logo{
+    position: absolute;
+    left: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 等线;
+    display: inline-block;
+}
+
+.logo strong{
+    font-weight: 800;
+    color: #333;
+    font-family: "Bradley Hand ITC";
+}
+
+.user{
+    position: absolute;
+    right: 15px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+/*
+登录注册
+*/
+.signIn{
+    display: none;
+    z-index: 99999;
+    width: 220px;
+    height:290px;
+    left: 50%;
+    top: 50%;
+    margin-left: -110px;
+    position: absolute;
+}
+
+.login-wrap{
+    z-index: 99999;
+    margin-left: -20px;
+    width: 220px;
+    height:290px;
+    position:absolute;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+    width:100%;
+    height:100%;
+    position:absolute;
+    padding:20px;
+    background:rgba(40,57,101,.9);
+}
+
+.close{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    z-index: 999999;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin-top: 15px;
+    position:absolute;
+    -webkit-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+    display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+    text-transform:uppercase;
+}
+.login-html .tab{
+    color: #999;
+    font-size:14px;
+    padding-bottom:5px;
+    margin:0 15px 10px 0;
+    display:inline-block;
+    border-bottom:1px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+    color:#fff;
+    border-color:#1161ee;
+}
+.login-form{
+    min-height:250px;
+    position:relative;
+    -webkit-perspective:1000px;
+    perspective:1000px;
+    -webkit-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+}
+.login-form .group{
+    margin-bottom: 10px;
+}
+.login-form .group .label,
+.login-form .group .input{
+    width: 90%;
+    color: #fff;
+    display: block;
+}
+.login-form .group .button{
+    width: 100%;
+    color: #fff;
+    display: block;
+}
+.login-form .group .input,
+.login-form .group .button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+    text-security: circle;
+    -webkit-text-security: circle;
+}
+.login-form .group .label{
+    color:#aaa;
+    font-size: 8px;
+    font-weight: 300;
+}
+.login-form .group .button{
+    background:#1161ee;
+    margin-top: 15px;
+}
+.login-form .group label .icon{
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    -webkit-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+    left: 3px;
+    width: 5px;
+    bottom: 6px;
+    -webkit-transform:scale(0) rotate(0);
+    -ms-transform:scale(0) rotate(0);
+    transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+    top:6px;
+    right:0;
+    -webkit-transform:scale(0) rotate(0);
+    -ms-transform:scale(0) rotate(0);
+    transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+    color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+    background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+    -webkit-transform:scale(1) rotate(45deg);
+    -ms-transform:scale(1) rotate(45deg);
+    transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+    -webkit-transform:scale(1) rotate(-45deg);
+    -ms-transform:scale(1) rotate(-45deg);
+    transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+    -webkit-transform:rotate(0);
+    -ms-transform:rotate(0);
+    transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+    -webkit-transform:rotate(0);
+    -ms-transform:rotate(0);
+    transform:rotate(0);
+}
+
+.hr{
+    height:2px;
+    margin:10px 0 10px 0;
+    background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+    text-align:center;
+}
+
+/*
+search
+*/
+.search{
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    width: 160px;
+}
+
+.search_input{
+    border: none;
+    border-bottom: 1px solid #333;
+    background: none;
+    width: 120px;
+}
+
+.search_button{
+    width: 30px;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    background: none;
+}
+
+.search_button:focus,
+.search_input:focus{
+    outline: none;
+}
+
+/*
+banner
+*/
+.banner {
+    margin-top: -5px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner ul {
+    margin: 0;
+    padding: 0;
+}
+
+.bannerDiv {
+    background: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerContent {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.bannerContent div {
+    position: absolute;
+    height: 300px;
+}
+
+.bannerContent .smask {
+    z-index: -1;
+}
+
+.bannerContent img {
+    border: 0;
+}
+
+.bannerNav {
+    DISPLAY: block;
+    OVERFLOW: hidden;
+    WIDTH: 50px;
+    HEIGHT: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5;
+}
+
+.bannerNav LI {
+    DISPLAY: block;
+    FLOAT: left;
+    WIDTH: 10px;
+    CURSOR: pointer;
+    HEIGHT: 10px;
+    border-radius: 5px;
+    TEXT-ALIGN: center;
+    margin-left: 2px;
+    background: #666;
+    color: #fff;
+}
+
+.bannerNav .nbg {
+    BACKGROUND: #666;
+}
+
+.bannerNav .current {
+    BACKGROUND: #92d3d0;
+}
+
+.bannerNav .current A {
+    COLOR: #fff;
+}
+
+/*
+container
+*/
+.container{
+    padding: 20px 0;
+    width: 100%;
+}
+
+.title{
+    width: 100%;
+}
+
+.classify{
+    color:#747272;
+    font-size: 1.2em;
+    padding:0 1em;
+}
+
+.classify:after{
+    content: "";
+    background: url(../images/line.png) 0 0;
+    height: 10px;
+    width: 85%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tap{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.tap_div{
+    width: 33.3%;
+    height: 120px;
+    float: left;
+    position: relative;
+}
+
+.tap_div a{
+   display: block;
+    color: #000;
+}
+
+.tap_div i{
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+.tap_div p{
+    position: absolute;
+    display: block;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 0.6em;
+}
+
+.tap1 p,
+.tap1 i{
+    background: #95a098;
+}
+
+.tap2 p,
+.tap2 i{
+    background: #babcaf;
+}
+
+.tap3 p,
+.tap3 i{
+    background: #fdedd4;
+}
+
+.tap4 p,
+.tap4 i{
+    background: #7b9d9f;
+}
+
+.tap5 p,
+.tap5 i{
+    background: #99a8a1;
+}
+
+.tap6 p,
+.tap6 i{
+    background: #95a098;
+}
+
+.tap7 p,
+.tap7 i{
+    background: #babcaf;
+}
+
+.tap8 p,
+.tap8 i{
+    background: #fdedd4;
+}
+
+.tap9 p,
+.tap9 i{
+    background: #7b9d9f;
+}
+
+/**
+footer
+*/
+footer{
+    width: 100%;
+    height: 140px;
+    background: url("../images/footer.png");
+    background-repeat: repeat;
+    font-size: 0.5em;
+    color: #888;
+}
+
+.footer_div{
+    float: left;
+    padding: 15px 20px;
+}
+
+.footer_div h3{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 0.7em;
+}
+
+.contactUs ul li{
+    line-height: 20px;
+}
+.contactUs ul li i{
+    margin: 0 5px;
+}
+
+
+/*
+
+
+商品列表
+
+
+*/
+.list_main{
+    width: 100%;
+    height: auto;
+}
+
+.goods_list{
+    position: relative;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.list_img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: inline;
+}
+
+.list_img img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+.list_info{
+    float: left;
+    width: 150px;
+    display: inline;
+    margin-left: 30px;
+}
+
+.list_info .list_title{
+    font-size: 14px;
+    color: #666;
+}
+
+.list_info .list_price{
+    font-size: 18px;
+    color: maroon;
+    padding: 15px 10px;
+}
+
+.list_info .list_button a{
+    color: #ffffff;
+    background: #7b9d9f;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+
+/*
+
+goods
+
+*/
+
+.good_main{
+    width: 100%;
+    height: auto;
+}
+
+.good_container{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.good_img{
+    width: 250px;
+    height: 218px;
+    margin: 10px auto;
+}
+
+.good_img img{
+    width: 250px;
+    height: 218px;
+}
+
+.good_info{
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.good_title p{
+    font-size: 22px;
+    font-weight: 500;
+    color: #666;
+    display: inline;
+}
+
+.good_price{
+    margin: 30px 10px 30px 20px;
+    font-size: 26px;
+    color: maroon;
+}
+
+.good_price a{
+    display: inline;
+    padding: 7px 10px;
+    margin-left: 30px;
+    font-size: 8px;
+    font-weight: 200;
+    color: #ffffff;
+    background: #7b9d9f;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.good_num{
+    padding: 5px 0;
+    margin: 20px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.good_num p{
+    display: inline;
+}
+
+.num1{
+    color: darkred;
+}
+
+.good_button{
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    background: url("../images/background.png");
+    text-align: center;
+    line-height: 50px;
+    margin: 15px 0;
+    box-shadow: 0 2px 2px 0 #eee;
+}
+
+.good_contact p a{
+    color: #000;
+}
+
+.good_detail h3{
+    font-size: 18px;
+    padding: 5px 0;
+    margin: 5px;
+    border-bottom: 1px solid #333;
+}
+
+/*
+
+issue
+
+*/
+
+.issue_main{
+    width: 100%;
+    height: auto;
+}
+
+.issue_container{
+    width: 80%;
+    margin: 30px auto;
+}
+
+form{
+    width: 100%;
+}
+
+.tap_select{
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.tap_select:focus{
+    outline: none;
+}
+
+.issue_input,
+.issue_textarea{
+    width: 80%;
+    padding: 8px;
+    margin: 10px 10px 10px 0;
+}
+
+.issue_input:focus,
+.issue_textarea:focus{
+    outline: none;
+}
+
+.issue_textarea{
+   height: 120px;
+}
+
+.issue_button{
+    width: 90%;
+    margin: 10px auto;
+    height: 40px;
+    line-height: 40px;
+    background: none;
+    border: 1px solid #999;
+}
+
+.issue_button:focus{
+    outline: none;
+}
+
+/*
+
+personal
+
+*/
+.personal_info{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin: -7px 0 20px 0;
+    padding: 25px 0;
+    background: url("../images/footer.png") repeat;
+}
+
+.personal_img{
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    margin: 0 auto;
+    border: 1px solid #999;
+}
+
+.personal_img img{
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+}
+
+.personal_id{
+    width: 200px;
+    margin: 20px auto;
+}
+
+.personal_id p{
+    width: 200px;
+    text-align: center;
+}
+
+.personal_id p:after{
+    content: "  >";
+}
+
+.personal_main{
+    width: 100%;
+}
+
+#myTab{
+    width: 100%;
+}
+
+#myTab li{
+    width: 33.3%;
+    text-align: center;
+}
+
+.personal_tag li a{
+   color: #000;
+}
+
+.personal_tag li a i{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.personal_tag li a p{
+    margin: 10px 0;
+}
+
+#per_tag1{
+    background: #babcaf;
+}
+
+#per_tag2{
+    background: #fdedd4;
+}
+
+#per_tag3{
+    background: #7b9d9f;
+}
+
+.personal_list{
+    position: relative;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.personal_list_img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: inline;
+}
+
+.personal_list_img img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+.personal_list_info{
+    float: left;
+    width: 150px;
+    display: inline;
+    margin-left: 30px;
+}
+
+.personal_list_info .personal_list_title{
+    font-size: 14px;
+    color: #666;
+}
+
+.personal_list_info{
+    font-size: 18px;
+    color: maroon;
+    padding: 15px 10px;
+}
+
+.personal_list_title,
+.personal_list_button{
+    margin: 10px 0;
+}
+
+.personal_list_info .personal_list_button a{
+    color: #ffffff;
+    background: #7b9d9f;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.change_userImg_div,
+.change_userInfo_div{
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-radius: 10px;
+    background: rgba(160,160,160,0.9);
+    z-index: 100;
+    display: none;
+}
+
+.change_userImg_div input,
+.change_userImg_div button,
+.change_userInfo_div input,
+.change_userInfo_div button{
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+    color: #000;
+}
+
+.change_userImg_div input,
+.change_userInfo_div input{
+    width: 80%;
+    border: none;
+}
+
+.change_userImg_div p,
+.change_userInfo_div p{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+
+.change_userInfo_div input{
+    border-bottom: 1px solid #000;
+}
+
+.change_userImg_div button,
+.change_userInfo_div button{
+    width: 80%;
+    border: #000 solid 1px;
+}
+
+.change_img_close,
+.change_info_close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+

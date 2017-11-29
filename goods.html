@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+    <div class="logo">爱<strong> pin</strong></div>
+    <div class="user">
+        <i class="fa fa-user"></i>
+    </div>
+    <div class="search">
+        <form action="">
+            <input class="search_input" type="text" value="" placeholder="搜索">
+            <button class="search_button" type="button"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="signIn">
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登录</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">注册</label>
+                <div class="login-form">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label for="user" class="label">用户名</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="登录">
+                        </div>
+                        <div class="hr"></div>
+
+                    </div>
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="user" class="label">用户名</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">再次输入密码</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="注册">
+                        </div>
+                        <div class="hr"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close">×</div>
+    </div>
+</div>
+
+<!-- 商品信息 -->
+<div class="good_main">
+    <div class="goods_container">
+        <div class="good_img"><img src="images/goods/goods1.jpg" alt=""></div>
+        <div class="good_info">
+            <div class="good_title">
+                <p>尼康（Nikon）COOLPIX B700 长焦数码相机</p>
+            </div>
+            <div class="good_price">
+                <i class="fa fa-rmb"></i>
+                40000
+                <a href="">
+                    <i class="fa fa-link"></i>
+                    商品链接
+                </a>
+            </div>
+            <div class="good_num">
+                <p>已参与人数/目标人数 : </p>
+                <p>
+                    <span class="num1">2</span>
+                    /
+                    <span class="num2">5</span>
+                </p>
+            </div>
+            <div class="good_button good_contact">
+                <p>
+                    <a href="">
+                        联系发起人
+                        <i class="fa fa-user"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="good_button good_join">
+                <p>点击加入</p>
+            </div>
+            <div class="good_detail">
+                <h3>商品详细信息:</h3>
+                <p>
+                    商品名称：尼康COOLPIX<br/>
+                    商品编号：4410890商品<br/>
+                    毛重：0.97kg<br/>
+                    商品产地：中国大陆<br/>
+                    特点：望远长焦，WIFI连接，美颜自拍，经典复古<br/>
+                    像素：0-2000万传感器<br/>
+                    尺寸：1/2.3英寸<br/>
+                    颜色：黑色<br/>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>
